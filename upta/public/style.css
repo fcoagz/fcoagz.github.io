@@ -4,7 +4,7 @@
     background-color: white;}
 .lag_h2{
     backdrop-filter: blur(20px);
-    padding: 20px;
+    padding: 15px;
     display: inline-block;
     cursor: pointer;
     border-radius: 10px;}
