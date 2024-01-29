@@ -1,0 +1,331 @@
+html, body{
+    scroll-behavior: smooth;
+}
+
+@font-face{
+    font-family: 'inter';
+src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face{
+    font-family: 'inter_back';
+    src: url(fonts/Inter-Black.ttf);
+}
+
+
+h1{
+    font-family: 'inter_back';
+    text-shadow: rgba(5, 226, 226, 0.4) 0px 10px 24px;
+    
+}
+
+h1 > span{
+    text-decoration-line: underline;
+    text-decoration-style: "solid";
+    text-decoration-color: rgb(49, 83, 221);
+
+}
+
+p{
+    font-family: 'inter';
+}
+
+
+
+/*====================*/
+/* NAVBAR ESTILOS
+/*====================*/
+
+.navbar-collapse, .spn-h {
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3254de;
+    padding: 0 20px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.navbar-collapse{
+    position: fixed;
+    top: .5rem;
+    width: 90%;
+    float: inline-start;
+    z-index: 2;
+
+}
+
+.nav-item{
+    opacity: .8;
+    font-weight: 600;
+}
+
+
+li > a{
+    color: aliceblue !important;
+}
+
+li > a:hover{
+    color: black !important;
+    opacity: none;
+    transform: rotate(7deg);
+    
+}
+
+.img-nav{
+    border-radius: 30px;
+}
+
+
+/*====================*/
+/* TITULO
+/*====================*/
+
+.titulo{
+    margin-left: 4rem;
+    margin-top: 1rem;
+    color: #17191f;
+    
+}
+
+.bt {
+    background-color: #4772ea !important;
+}
+
+.ml > h1{
+    font-size: 2.9rem;
+    color: #17191f; 
+    font-weight: 700;
+    margin-right: 2rem;
+}
+
+.botom {
+    text-align: center;
+    position: relative;
+    height: 2.5rem !important;
+    bottom: 5rem;
+    border-radius: 10px !important;
+    width: 12% !important;
+    background-color: #121212 !important;
+}
+
+.parrafo-titulo{
+    position: relative;
+    bottom: 5rem;
+
+}
+
+/*====================*/
+/* INTRODUCCION
+/*====================*/
+
+
+
+.fs{
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0 !important;
+    color: #2a3ab0;
+    font-weight: 400;
+    
+}
+
+
+/*----- ANIMACION BOTON ----*/
+
+.bt {
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+}
+
+.bt:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.bt:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+.bt {
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid white;
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    
+}
+
+.bt:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #2a3ab0 ;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.bt:hover {
+    color: #080808;
+}
+
+.bt:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+.bt:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.bt:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+}
+
+/*----- ANIMACION INTRODUCCION -----*/
+
+
+.hover-efect{
+    border-right: .10em solid #000000;
+    animation: escribir 1s steps(1) infinite;
+    
+}
+
+@keyframes escribir{
+    50% {
+    border-color: transparent;
+    }
+}
+
+.hover-efect{
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: escribir2 4s steps(38) 1s 1 normal both, escribir 1s steps(1) infinite;
+}
+
+@keyframes escribir2 {
+    from {
+    width: 0;
+    }
+    to {
+    width: 60%;
+    }
+}
+
+.ft{
+    background-color: #9abaf6 ;
+    border-radius: 20px;
+    color: black;
+    padding: 20px;
+    font-weight: 600;
+    border-style: solid;
+}
+
+.ps{
+    font-weight: bold; 
+    padding: 15px;
+    border-left:8px solid #3254de; 
+    border-top-left-radius:8px; 
+    border-bottom-left-radius:8px;
+}
+
+/* .ft{
+    border-radius: solid #000000;
+    animation: escribir 1s steps(1) infinite;
+    
+}
+
+@keyframes escribir{
+    50% {
+    border-color: transparent;
+    }
+} */
+
+
+
+/*====================*/
+/* OBJETIVOS
+/*====================*/
+
+.caja{
+    border: 1px #121212 solid ;
+    height: 250px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.card {
+    width: 80%;
+    height: 80%;
+    background-color: #F8FBFE;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.card__content{
+    padding: 30px;
+}
+
+.card__content > p{
+    padding: 20px 0;
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.circle {
+    padding: 0 4px;
+}
+
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+
+.red {
+    background-color: #ff605c;
+}
+
+.yellow {
+    background-color: #ffbd44;
+}
+
+.green {
+    background-color: #00ca4e;
+    margin-right: 2.5rem;
+}
+
+
+.sear{
+    background-color: rgb(224 225 226);
+    width: 600px;
+    height: 12px;
+    border-radius: 20px;
+}
